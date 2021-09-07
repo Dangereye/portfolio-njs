@@ -1,0 +1,33 @@
+@import "partials/variables";
+@import "partials/typography";
+
+@import "components/navbar";
+@import "components/footer";
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Global
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 $desktop-hp;
+}
+
+.section {
+  min-height: calc(100vh - 20rem);
+  padding: 4rem 0;
+  border: 1px solid red;
+}
