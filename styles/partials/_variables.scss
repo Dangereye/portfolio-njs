@@ -1,1 +1,13 @@
-$desktop-hp: 4rem;
+// Padding
+$section-vertical-padding: clamp(4rem, 7.5vw, 10rem);
+$page-horizontal-padding: clamp(1.6rem, 4vw, 4.8rem);
+
+// Sizes
+$nav-height: 10rem;
+$mobile: 600px;
+
+// Colours
+$accent-color: #da3b26;
+
+$text-dark: #222;
+$text-light: #fff;

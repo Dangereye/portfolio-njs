@@ -1,35 +1,47 @@
 import Link from "next/link";
-function Navbar() {
+function Navbar({ isNavOpen, setIsNavOpen }) {
+  const ToggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <nav className="nav">
       <div className="container">
+        <div
+          className={`nav__mobile-menu ${isNavOpen ? "active" : ""}`}
+          onClick={ToggleNav}
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <Link href="/">
           <a className="logo">PUX.</a>
         </Link>
         <ul className="nav__items">
           <li className="nav__item">
-            <Link href="/">
+            <Link href="/#portfolio">
               <a className="nav__link">Portfolio</a>
             </Link>
           </li>
           <li className="nav__item">
-            <Link href="/">
+            <Link href="/#skills">
               <a className="nav__link">Skills</a>
             </Link>
           </li>
           <li className="nav__item">
-            <Link href="/">
+            <Link href="/#photoshop">
               <a className="nav__link">Photoshop</a>
             </Link>
           </li>
           <li className="nav__item">
-            <Link href="/">
+            <Link href="/#about">
               <a className="nav__link">About</a>
             </Link>
           </li>
           <li className="nav__item">
-            <Link href="/">
-              <a className="nav__btn">Contact</a>
+            <Link href="/#contact">
+              <a className="btn btn--primary btn--small">Contact</a>
             </Link>
           </li>
         </ul>

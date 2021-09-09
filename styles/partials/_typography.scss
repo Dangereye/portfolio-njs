@@ -4,4 +4,20 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
   line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+.subheading {
+  color: $accent-color;
+  font-style: italic;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.618;
+
+  span {
+    color: $accent-color;
+    font-weight: 500;
+  }
 }

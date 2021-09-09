@@ -1,0 +1,20 @@
+.mobile-nav {
+  position: fixed;
+  top: $nav-height;
+  left: -100%;
+  width: 100%;
+  height: calc(100vh - 10rem);
+  padding: $section-vertical-padding $page-horizontal-padding;
+  background-color: #eee;
+  transition: left 0.4s;
+  display: none;
+  z-index: 99;
+
+  &.active {
+    left: 0;
+  }
+
+  @media (max-width: 570px) {
+    display: block;
+  }
+}

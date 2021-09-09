@@ -1,10 +1,11 @@
+import Header from "../components/layout/Header";
+
 function Home() {
   return (
-    <section className="section">
-      <div className="container">
-        <h1>Home Page</h1>
-      </div>
-    </section>
+    <div className="page-content">
+      <Header />
+      <main className="main"></main>
+    </div>
   );
 }
 

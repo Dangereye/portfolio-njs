@@ -1,8 +1,12 @@
 @import "partials/variables";
 @import "partials/typography";
 
-@import "components/navbar";
-@import "components/footer";
+@import "components/layout/navbar";
+@import "components/layout/mobile-nav";
+@import "components/layout/header";
+@import "components/layout/footer";
+
+@import "components/buttons";
 
 // Reset
 * {
@@ -11,9 +15,8 @@
   box-sizing: border-box;
 }
 
-//Global
-body {
-  font-size: 1.6rem;
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -21,13 +24,20 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 100%;
-  padding: 0 $desktop-hp;
+//Global
+body {
+  font-size: 1.6rem;
+  color: $text-dark;
 }
 
-.section {
-  min-height: calc(100vh - 20rem);
-  padding: 4rem 0;
-  border: 1px solid red;
+.page-content {
+  margin-top: $nav-height;
+  min-height: calc(100vh - 10rem);
+}
+
+.container {
+  width: 100%;
+}
+
+.main {
 }
