@@ -15,11 +15,6 @@
 
   &--large {
     padding: 1.6rem 3.2rem;
-
-    @media (max-width: $mobile) {
-      display: block;
-      width: 100%;
-    }
   }
 
   &--primary {
@@ -29,6 +24,13 @@
 
   &--secondary {
     color: inherit;
-    border: 2px solid $accent-color;
+    border: 1px solid $accent-color;
+  }
+
+  &--block {
+    @media (max-width: $mobile) {
+      display: block;
+      width: 100%;
+    }
   }
 }

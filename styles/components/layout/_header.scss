@@ -1,3 +1,22 @@
 .header {
+  height: calc(100vh - 20rem);
   padding: $section-vertical-padding $page-horizontal-padding;
+  text-align: center;
+  color: $text-light;
+  background-color: #000;
+
+  display: grid;
+  place-content: center;
+
+  .btn {
+    margin-top: $section-vertical-padding;
+  }
+
+  @media (max-width: $mobile) {
+    height: calc(100vh - 10rem);
+  }
+
+  @media (max-height: 420px) {
+    height: 100vh;
+  }
 }
