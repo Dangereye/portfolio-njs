@@ -1,0 +1,29 @@
+.list {
+  margin-bottom: 4rem;
+
+  &__title {
+    margin-bottom: 2rem;
+    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+
+    &:before {
+      margin-right: 1rem;
+      display: inline-block;
+      content: "\276F";
+      color: $accent-color;
+      font-size: 1.8rem;
+    }
+  }
+}

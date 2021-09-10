@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-      <MobileNav isNavOpen={isNavOpen} />
+      <MobileNav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Component {...pageProps} />
       <Footer />
     </>
