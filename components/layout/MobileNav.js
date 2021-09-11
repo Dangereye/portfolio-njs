@@ -27,7 +27,7 @@ function MobileNav({ isNavOpen, setIsNavOpen }) {
               href="/cv.txt"
               className="list__link"
               onClick={CloseMenu}
-              download="cv"
+              download
             >
               Curriculum Vitae
             </a>

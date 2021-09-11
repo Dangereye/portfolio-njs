@@ -1,10 +1,11 @@
 import Header from "../components/layout/Header";
+import Portfolio from "../components/sections/Portfolio";
 
 function Home() {
   return (
     <div className="page-content">
       <Header />
-      <main className="main"></main>
+      <Portfolio />
     </div>
   );
 }
