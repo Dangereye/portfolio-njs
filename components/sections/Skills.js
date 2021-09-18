@@ -24,7 +24,7 @@ function Skills() {
                       />
                       <div className="list__text">
                         {skill.title}
-                        {skill.note && <span>"{skill.note}"</span>}
+                        {skill.note && <span>({skill.note})</span>}
                       </div>
                     </li>
                   ))}
