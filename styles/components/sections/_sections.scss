@@ -1,6 +1,10 @@
 .section {
   padding: $section-vertical-padding $page-horizontal-padding;
 
+  &:nth-of-type(even) {
+    background-color: $body-medium;
+  }
+
   &__grid {
     margin-top: $section-vertical-padding;
     display: grid;
@@ -26,8 +30,7 @@
     }
 
     &__type,
-    &__title,
-    &__year {
+    &__title {
       margin-bottom: 1rem;
     }
 
