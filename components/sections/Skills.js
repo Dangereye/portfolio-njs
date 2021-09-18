@@ -19,8 +19,6 @@ function Skills() {
                         width="25"
                         height="25"
                         alt={skill.title}
-                        blurDataURL={skill.title}
-                        placeholder="blur"
                       />
                       <div className="list__text">
                         {skill.title}
