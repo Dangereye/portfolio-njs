@@ -8,12 +8,12 @@ function Skills() {
         <h2 className="section__title">My Experience</h2>
         <div className="section__grid">
           {mySkills.map((list) => (
-            <div className="list list__card">
+            <div className="list list__card" key={list.title}>
               <div>
                 <h3 className="list__title">{list.title}</h3>
                 <ul className="list__items">
                   {list.skills.map((skill) => (
-                    <li className="list__item">
+                    <li className="list__item" key={skill.title}>
                       <Image
                         src={skill.svg}
                         width="25"
