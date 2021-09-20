@@ -19,6 +19,7 @@ function Skills() {
                         width="25"
                         height="25"
                         alt={skill.title}
+                        title={skill.title}
                       />
                       <div className="list__text">
                         {skill.title}
