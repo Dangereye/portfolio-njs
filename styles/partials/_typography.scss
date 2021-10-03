@@ -3,7 +3,7 @@
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
-  line-height: 1;
+  line-height: 1.618;
   letter-spacing: 0.5px;
 }
 
@@ -11,7 +11,7 @@ html {
 h1,
 .section__title,
 .section__subtitle {
-  margin-bottom: 2rem;
+  // margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -33,15 +33,15 @@ h1 {
 }
 
 p {
-  line-height: 1.618;
-
-  span {
-    color: $accent-color;
-    font-weight: 500;
-  }
+  // line-height: 1.618;
 
   &.lead {
     color: $text-light2;
     font-size: clamp(1.6rem, 2.5vw, 2rem);
+
+    span {
+      color: $accent-color;
+      font-weight: 500;
+    }
   }
 }

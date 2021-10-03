@@ -1,4 +1,5 @@
 import Header from "../components/layout/Header";
+import About from "../components/sections/About";
 import Photoshop from "../components/sections/Photoshop";
 import Portfolio from "../components/sections/Portfolio";
 import Skills from "../components/sections/Skills";
@@ -10,6 +11,7 @@ function Home() {
       <Portfolio />
       <Skills />
       <Photoshop />
+      <About />
     </div>
   );
 }

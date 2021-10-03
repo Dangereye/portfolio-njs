@@ -5,13 +5,6 @@
     background-color: $body-medium;
   }
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2rem;
-  }
-
-  &__grid,
   &__block {
     margin-top: $section-vertical-padding;
   }

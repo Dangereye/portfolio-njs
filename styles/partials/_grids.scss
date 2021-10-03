@@ -1,0 +1,43 @@
+.grid {
+  display: grid;
+
+  &--2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $section-vertical-padding;
+
+    &__a,
+    &__b {
+      display: flex;
+    }
+
+    &__a {
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    &__b {
+      max-width: 60rem;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .section__title,
+      .section__subtitle {
+        text-align: left;
+      }
+
+      p:not(:last-child) {
+        margin: 1rem 0;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--multiple {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 2rem;
+  }
+}

@@ -16,7 +16,7 @@ function Photoshop() {
             blurDataURL="/img/sections/photoshop/beechfield_morf_elements.jpg"
             placeholder="blur"
           />
-          <div className="section__grid">
+          <div className="section__block grid grid--multiple">
             {Slides.map((slide, index) => (
               <div className="project" key={`slide-${index}`}>
                 <div className="project__image">

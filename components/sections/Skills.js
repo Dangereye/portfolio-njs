@@ -6,7 +6,7 @@ function Skills() {
       <div className="container">
         <div className="section__subtitle">Skills</div>
         <h2 className="section__title">My Experience</h2>
-        <div className="section__grid">
+        <div className="section__block grid grid--multiple">
           {mySkills.map((list) => (
             <div className="list list__card" key={list.title}>
               <div>

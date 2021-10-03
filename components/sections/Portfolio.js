@@ -7,7 +7,7 @@ function Portfolio() {
       <div className="container">
         <div className="section__subtitle">Portfolio</div>
         <h2 className="section__title">Recent Projects</h2>
-        <div className="section__grid">
+        <div className="section__block grid grid--multiple">
           {myProjects.map((project) => (
             <div className="project" key={`project-${project.id}`}>
               <div className="project__image">
