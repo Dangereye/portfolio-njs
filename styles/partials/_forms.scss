@@ -1,0 +1,33 @@
+.form {
+  max-width: 80rem;
+  margin: 0 auto;
+
+  label {
+    margin-bottom: 5px;
+    display: block;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  &__group {
+    margin-bottom: 1.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 20rem;
+  }
+
+  ::placeholder {
+    color: $text-light2;
+  }
+}
