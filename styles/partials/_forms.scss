@@ -14,12 +14,18 @@
     margin-bottom: 1.5rem;
   }
 
-  input[type="text"],
-  input[type="email"],
+  input,
   textarea {
     width: 100%;
     padding: 1rem;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
+    border: 1px solid $text-light2;
+    border-radius: 1rem;
+  }
+
+  input[type="text"] {
+    text-transform: capitalize;
   }
 
   textarea {

@@ -1,18 +1,21 @@
-function TextArea({ name, value, onChange, placeholder, required }) {
+function FormInput({ type, name, value, onChange, placeholder, required }) {
   return (
     <div className="form__group">
       <label htmlFor={name}>{name}</label>
-      <textarea
+      <input
+        type={type}
         name={name}
         value={value}
         onChange={onChange}
         placeholder={placeholder}
         required={required}
-      ></textarea>
+      />
     </div>
   );
 }
-TextArea.defaultProps = {
+
+FormInput.defaultProps = {
+  type: "text",
   name: "undefined",
   value: "undefined",
   onChange: () => {
@@ -21,5 +24,4 @@ TextArea.defaultProps = {
   placeholder: "undefined",
   required: false,
 };
-
-export default TextArea;
+export default FormInput;
