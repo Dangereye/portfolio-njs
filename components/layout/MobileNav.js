@@ -16,7 +16,7 @@ function MobileNav({ isNavOpen, setIsNavOpen }) {
           { text: "About", link: "/#about" },
           { text: "Contact", link: "/#contact" },
         ]}
-        CloseMenu={CloseMenu}
+        onClick={CloseMenu}
       />
 
       <div className="list">

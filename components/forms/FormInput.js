@@ -16,12 +16,12 @@ function FormInput({ type, name, value, onChange, placeholder, required }) {
 
 FormInput.defaultProps = {
   type: "text",
-  name: "undefined",
-  value: "undefined",
+  name: "Name",
+  value: "",
   onChange: () => {
     return;
   },
-  placeholder: "undefined",
+  placeholder: "placeholder",
   required: false,
 };
 export default FormInput;

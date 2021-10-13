@@ -1,6 +1,41 @@
 .footer {
-  min-height: $nav-height;
+  background-color: $body-dark;
+  color: $text-light2;
   padding: 0 $page-horizontal-padding;
-  display: flex;
-  align-items: center;
+
+  &__top {
+    padding: $section-vertical-padding 0;
+  }
+  &__logo {
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $text-light;
+  }
+
+  &__caption {
+    width: 20ch;
+  }
+
+  &__icons {
+    margin: 2rem 0 4rem 0;
+
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__back-to-top {
+    margin-top: 4rem;
+    text-align: right;
+  }
+}
+
+.copyright {
+  background-color: $body-dark;
+  color: $text-light2;
+  border-top: 1px solid $text-light3;
+  padding: 2rem $page-horizontal-padding;
 }

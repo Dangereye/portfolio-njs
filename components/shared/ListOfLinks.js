@@ -1,5 +1,5 @@
 import Link from "next/link";
-function ListOfLinks({ component, CloseMenu, title, list }) {
+function ListOfLinks({ component, onClick, title, list }) {
   return (
     <div className="list">
       <h3 className="list__title">{title}</h3>
@@ -7,7 +7,7 @@ function ListOfLinks({ component, CloseMenu, title, list }) {
         {list.map((item) => (
           <li className="list__item" key={`${component}-${item.text}`}>
             <Link href={item.link}>
-              <a className="list__link" onClick={CloseMenu}>
+              <a className="list__link" onClick={onClick}>
                 {item.text}
               </a>
             </Link>
@@ -17,5 +17,18 @@ function ListOfLinks({ component, CloseMenu, title, list }) {
     </div>
   );
 }
+
+ListOfLinks.defaultProps = {
+  component: "Component",
+  title: "Title",
+  list: [
+    { text: "A", link: "#" },
+    { text: "B", link: "#" },
+    { text: "C", link: "#" },
+  ],
+  onClick: () => {
+    return;
+  },
+};
 
 export default ListOfLinks;
