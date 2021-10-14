@@ -14,7 +14,6 @@ function MobileNav({ isNavOpen, setIsNavOpen }) {
           { text: "Skills", link: "/#skills" },
           { text: "Photoshop", link: "/#photoshop" },
           { text: "About", link: "/#about" },
-          { text: "Contact", link: "/#contact" },
         ]}
         onClick={CloseMenu}
       />
@@ -34,6 +33,13 @@ function MobileNav({ isNavOpen, setIsNavOpen }) {
           </li>
         </ul>
       </div>
+
+      <ListOfLinks
+        title="Contact"
+        component="mobile-nav"
+        list={[{ text: "Send Email", link: "/#contact" }]}
+        onClick={CloseMenu}
+      />
     </div>
   );
 }

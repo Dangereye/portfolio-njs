@@ -36,7 +36,7 @@ function Footer() {
               <ListOfLinks
                 component="footer"
                 title="Downloads"
-                list={[{ text: "Curiculum Vitae", link: "/" }]}
+                list={[{ text: "Curriculum Vitae", link: "/" }]}
               />
               <ListOfLinks
                 component="footer"
