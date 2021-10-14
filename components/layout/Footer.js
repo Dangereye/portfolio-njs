@@ -23,9 +23,26 @@ function Footer() {
                   <IconAnchor src="/img/svg/linkedin-alt.svg" />
                 </div>
               </div>
-              <ListOfLinks />
-              <ListOfLinks />
-              <ListOfLinks />
+              <ListOfLinks
+                component="footer"
+                title="Projects"
+                list={[
+                  { text: "Movies", link: "/" },
+                  { text: "The Weather", link: "/" },
+                  { text: "Star Wars", link: "/" },
+                  { text: "Portfolio", link: "/" },
+                ]}
+              />
+              <ListOfLinks
+                component="footer"
+                title="Downloads"
+                list={[{ text: "Curiculum Vitae", link: "/" }]}
+              />
+              <ListOfLinks
+                component="footer"
+                title="Contact"
+                list={[{ text: "Send Email", link: "/#contact" }]}
+              />
             </div>
             <div className="footer__back-to-top">
               <Button name="Back To Top" />
