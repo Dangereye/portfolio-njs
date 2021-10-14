@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Portfolio() {
   return (
-    <section className="section" id="#portfolio">
+    <section className="section" id="portfolio">
       <div className="container">
         <div className="section__subtitle">Portfolio</div>
         <h2 className="section__title">Recent Projects</h2>

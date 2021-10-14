@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function About() {
   return (
-    <section className="section">
+    <section className="section" id="about">
       <div className="container">
         <div className="grid grid--2">
           <div className="grid--2__a">
