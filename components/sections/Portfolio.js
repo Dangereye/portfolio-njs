@@ -5,8 +5,8 @@ function Portfolio() {
   return (
     <section className="section" id="portfolio">
       <div className="container">
-        <div className="section__subtitle">Portfolio</div>
-        <h2 className="section__title">Recent Projects</h2>
+        <div className="section__subtitle center">Portfolio</div>
+        <h2 className="section__title center">Recent Projects</h2>
         <div className="section__block grid grid--multiple">
           {myProjects.map((project) => (
             <div className="project" key={`project-${project.id}`}>

@@ -3,7 +3,7 @@ import About from "../components/sections/About";
 import Photoshop from "../components/sections/Photoshop";
 import Portfolio from "../components/sections/Portfolio";
 import Skills from "../components/sections/Skills";
-import Contact from "../Contact";
+import Contact from "../components/sections/Contact";
 
 function Home() {
   return (

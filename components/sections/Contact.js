@@ -1,7 +1,7 @@
 import { useState } from "react";
-import FormInput from "./components/forms/FormInput";
-import TextArea from "./components/forms/TextArea";
-import Button from "./components/shared/Button";
+import FormInput from "../forms/FormInput";
+import TextArea from "../forms/TextArea";
+import Button from "../shared/Button";
 
 function Contact() {
   const data = {
@@ -27,8 +27,8 @@ function Contact() {
   return (
     <section className="section" id="contact">
       <div className="container">
-        <div className="section__subtitle">Let's talk</div>
-        <h2 className="section__title">Contact Me</h2>
+        <div className="section__subtitle center">Let's talk</div>
+        <h2 className="section__title center">Contact Me</h2>
         <div className="section__block">
           <form className="form" onSubmit={handleSubmit}>
             <FormInput

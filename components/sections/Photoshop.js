@@ -5,8 +5,8 @@ function Photoshop() {
   return (
     <section className="section" id="photoshop">
       <div className="container">
-        <div className="section__subtitle">Photoshop</div>
-        <h2 className="section__title">Showcase</h2>
+        <div className="section__subtitle center">Photoshop</div>
+        <h2 className="section__title center">Showcase</h2>
         <div className="section__block">
           <Image
             src="/img/sections/photoshop/beechfield_morf_elements.jpg"

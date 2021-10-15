@@ -4,8 +4,8 @@ function Skills() {
   return (
     <section className="section" id="skills">
       <div className="container">
-        <div className="section__subtitle">Skills</div>
-        <h2 className="section__title">My Experience</h2>
+        <div className="section__subtitle center">Skills</div>
+        <h2 className="section__title center">My Experience</h2>
         <div className="section__block grid grid--multiple">
           {mySkills.map((list) => (
             <div className="list list__card" key={list.title}>
