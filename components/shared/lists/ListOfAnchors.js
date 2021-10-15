@@ -24,9 +24,9 @@ ListOfAnchors.defaultProps = {
   component: "Component",
   title: "Title",
   list: [
-    { text: "A", link: "#" },
-    { text: "B", link: "#" },
-    { text: "C", link: "#" },
+    { text: "A", link: "/" },
+    { text: "B", link: "/" },
+    { text: "C", link: "/" },
   ],
 };
 
