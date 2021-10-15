@@ -27,7 +27,7 @@ function Contact() {
   return (
     <section className="section" id="contact">
       <div className="container">
-        <div className="section__subtitle center">Let's talk</div>
+        <div className="section__subtitle center">Let&apos;s talk</div>
         <h2 className="section__title center">Contact Me</h2>
         <div className="section__block">
           <form className="form" onSubmit={handleSubmit}>
