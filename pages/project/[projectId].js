@@ -13,8 +13,9 @@ function ProjectDetails({ project }) {
               <div className="section__subtitle">{project.type}</div>
               <h1>{project.title}</h1>
               <div className="icons-array">
-                {project.tech.map((tech) => (
+                {project.tech.map((tech, index) => (
                   <Image
+                    key={`tech-${index}`}
                     src={tech.image}
                     alt={tech.alt}
                     width="40"
