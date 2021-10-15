@@ -1,4 +1,4 @@
-const svg = "/img/portfolio/svg";
+const svg = "/img/svg";
 const myProjects = [
   {
     id: "1",

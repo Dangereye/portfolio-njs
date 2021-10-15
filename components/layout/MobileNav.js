@@ -1,4 +1,4 @@
-import ListOfLinks from "../shared/ListOfLinks";
+import ListOfLinks from "../shared/lists/ListOfLinks";
 
 function MobileNav({ isNavOpen, setIsNavOpen }) {
   const CloseMenu = () => {

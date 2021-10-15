@@ -4,15 +4,15 @@ function About() {
   return (
     <section className="section" id="about">
       <div className="container">
-        <div className="grid grid--2">
-          <div className="grid--2__a">
+        <div className="grid grid--50-50">
+          <div className="grid--50-50__a">
             <Image
               src="/img/sections/about/profile-image.jpg"
               width="600"
               height="600"
             />
           </div>
-          <div className="grid--2__b">
+          <div className="grid--50-50__b">
             <h2 className="section__title">
               <span>Hello,</span> I am Craig.
             </h2>

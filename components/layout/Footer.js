@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ListOfLinks from "../shared/ListOfLinks";
+import ListOfLinks from "../shared/lists/ListOfLinks";
 import IconAnchor from "../shared/IconAnchor";
 import Button from "../shared/Button";
 
