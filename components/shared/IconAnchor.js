@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-function IconAnchor({ href, src, width, height }) {
+function IconAnchor({ href, src, width, height, alt }) {
   return (
     <a href={href} target="_blank" rel="noreferrer">
-      <Image src={src} width={width} height={height} />
+      <Image src={src} width={width} height={height} alt={alt} />
     </a>
   );
 }

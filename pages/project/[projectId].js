@@ -1,5 +1,6 @@
 import myProjects from "../../data/myProjects";
 import Image from "next/image";
+import { BiTimeFive } from "react-icons/bi";
 import ListOfAnchors from "../../components/shared/lists/ListOfAnchors";
 import Button from "../../components/shared/Button";
 
@@ -10,14 +11,18 @@ function ProjectDetails({ project }) {
         <div className="container">
           <div className="grid grid--sidebar">
             <main>
-              <div className="section__subtitle">{project.type}</div>
+              <div className="section__subtitle date">
+                <BiTimeFive />
+                {project.date}
+              </div>
               <h1>{project.title}</h1>
               <div className="icons-array">
                 {project.tech.map((tech, index) => (
                   <Image
                     key={`tech-${index}`}
                     src={tech.image}
-                    alt={tech.alt}
+                    alt={tech.text}
+                    title={tech.text}
                     width="40"
                     height="40"
                   />
@@ -27,8 +32,20 @@ function ProjectDetails({ project }) {
               <p>{project.description}</p>
             </main>
             <aside>
-              <ListOfAnchors />
-              <ListOfAnchors />
+              {project.api && (
+                <ListOfAnchors
+                  component="project_api"
+                  title="Api's"
+                  list={project.api}
+                />
+              )}
+              {project.third_party && (
+                <ListOfAnchors
+                  component="project_third_party"
+                  title="Third Party"
+                  list={project.third_party}
+                />
+              )}
             </aside>
           </div>
           <div className="buttons">

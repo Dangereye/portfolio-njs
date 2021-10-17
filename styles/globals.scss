@@ -46,3 +46,12 @@ body {
   width: 100%;
   max-width: $page-width;
 }
+
+.date {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 1rem;
+  }
+}
