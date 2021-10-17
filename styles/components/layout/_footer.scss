@@ -19,12 +19,8 @@
     width: 20ch;
   }
 
-  &__icons {
+  .icons-array {
     margin: 2rem 0 4rem 0;
-
-    a:not(:last-child) {
-      margin-right: 1rem;
-    }
   }
 
   &__back-to-top {

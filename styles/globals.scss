@@ -55,3 +55,9 @@ body {
     margin-right: 1rem;
   }
 }
+
+.icons-array {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 40px);
+  gap: 8px;
+}

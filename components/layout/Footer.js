@@ -18,8 +18,11 @@ function Footer() {
                   Projects created with passion, producing great user
                   experiences!
                 </p>
-                <div className="footer__icons">
-                  <IconAnchor src="/img/svg/github-alt.svg" />
+                <div className="icons-array">
+                  <IconAnchor
+                    src="/img/svg/github-alt.svg"
+                    href="https://github.com/Dangereye"
+                  />
                   <IconAnchor src="/img/svg/linkedin-alt.svg" />
                 </div>
               </div>
