@@ -1,9 +1,15 @@
+import { useRouter } from "next/router";
 import Link from "next/link";
 import ListOfLinks from "../shared/lists/ListOfLinks";
 import IconAnchor from "../shared/IconAnchor";
 import Button from "../shared/Button";
 
 function Footer() {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/");
+  };
   return (
     <>
       <footer className="footer">
@@ -62,7 +68,7 @@ function Footer() {
               />
             </div>
             <div className="footer__back-to-top">
-              <Button name="Back To Top" />
+              <Button name="Back To Top" func={handleClick} />
             </div>
           </div>
         </div>
