@@ -30,17 +30,31 @@ function Footer() {
                 component="footer"
                 title="Projects"
                 list={[
-                  { text: "Movies", link: "/" },
-                  { text: "The Weather", link: "/" },
-                  { text: "Star Wars", link: "/" },
-                  { text: "Portfolio", link: "/" },
+                  { text: "Movies", link: "http://localhost:3000/project/1" },
+                  {
+                    text: "The Weather",
+                    link: "http://localhost:3000/project/2",
+                  },
+                  {
+                    text: "Star Wars",
+                    link: "http://localhost:3000/project/3",
+                  },
+                  {
+                    text: "Portfolio",
+                    link: "http://localhost:3000/project/4",
+                  },
                 ]}
               />
-              <ListOfLinks
-                component="footer"
-                title="Downloads"
-                list={[{ text: "Curriculum Vitae", link: "/" }]}
-              />
+              <div className="list">
+                <h3 className="list__title">Downloads</h3>
+                <ul className="list__items">
+                  <li className="list__item">
+                    <a href="/cv.txt" className="list__link" download>
+                      Curriculum Vitae
+                    </a>
+                  </li>
+                </ul>
+              </div>
               <ListOfLinks
                 component="footer"
                 title="Contact"
