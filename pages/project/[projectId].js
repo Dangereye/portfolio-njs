@@ -15,21 +15,26 @@ function ProjectDetails({ project }) {
                 <BiTimeFive />
                 {project.date}
               </div>
-              <h1>{project.title}</h1>
-              <div className="icons-array">
-                {project.tech.map((tech, index) => (
-                  <Image
-                    key={`tech-${index}`}
-                    src={tech.image}
-                    alt={tech.text}
-                    title={tech.text}
-                    width="40"
-                    height="40"
-                  />
-                ))}
+              <h1 className="project-title">{project.title}</h1>
+              <div className="section__block">
+                <h3 className="list__title">Technologies</h3>
+                <div className="icons-array">
+                  {project.tech.map((tech, index) => (
+                    <Image
+                      key={`tech-${index}`}
+                      src={tech.image}
+                      alt={tech.text}
+                      title={tech.text}
+                      width="40"
+                      height="40"
+                    />
+                  ))}
+                </div>
               </div>
-              <h3 className="list__title">Description</h3>
-              <p>{project.description}</p>
+              <div className="section__block">
+                <h3 className="list__title">Description</h3>
+                <p>{project.description}</p>
+              </div>
             </main>
             <aside>
               {project.api && (
@@ -48,17 +53,23 @@ function ProjectDetails({ project }) {
               )}
             </aside>
           </div>
-          <div className="buttons">
+
+          <div className="section__block">
+            <h3 className="list__title">Preview</h3>
+            <div className="section__card">
+              <Image
+                src={project.preview_image}
+                width="1920"
+                height="1080"
+                blurDataURL={project.preview_image}
+                placeholder="blur"
+              />
+            </div>
+          </div>
+          <div className="section__block buttons">
             <Button />
             <Button />
           </div>
-          <Image
-            src={project.preview_image}
-            width="1920"
-            height="1080"
-            blurDataURL={project.preview_image}
-            placeholder="blur"
-          />
         </div>
       </section>
     </div>

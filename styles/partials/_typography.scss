@@ -22,6 +22,10 @@ html {
 h1 {
   font-size: clamp(4.8rem, 6vw, 8rem);
   font-weight: 700;
+
+  &.project-title {
+    line-height: 1.2;
+  }
 }
 
 .section__title {
@@ -30,6 +34,8 @@ h1 {
 }
 
 p {
+  max-width: 90ch;
+
   &.lead {
     color: $text-light2;
     font-size: clamp(1.6rem, 2.5vw, 2rem);

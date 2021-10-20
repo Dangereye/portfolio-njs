@@ -9,6 +9,10 @@
     margin-top: $section-vertical-padding;
   }
 
+  &__card {
+    @include card;
+  }
+
   .project {
     @include card;
     transition: transform $time;
