@@ -3,8 +3,12 @@ import Image from "next/image";
 import { BiTimeFive } from "react-icons/bi";
 import ListOfAnchors from "../../components/shared/lists/ListOfAnchors";
 import Button from "../../components/shared/Button";
+import Anchor from "../../components/shared/Anchor";
 
 function ProjectDetails({ project }) {
+  const HandleClick = () => {
+    console.log("Clicked");
+  };
   return (
     <div className="page-content">
       <section className="section">
@@ -67,8 +71,20 @@ function ProjectDetails({ project }) {
             </div>
           </div>
           <div className="section__block buttons">
-            <Button />
-            <Button />
+            {project.buttons.primary && (
+              <Anchor
+                name={project.buttons.primary.text}
+                style={project.buttons.primary.styles}
+                link={project.buttons.primary.link}
+              />
+            )}
+            {project.buttons.secondary && (
+              <Anchor
+                name={project.buttons.secondary.text}
+                style={project.buttons.secondary.styles}
+                link={project.buttons.secondary.link}
+              />
+            )}
           </div>
         </div>
       </section>

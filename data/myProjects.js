@@ -38,15 +38,13 @@ const myProjects = [
     ],
     buttons: {
       primary: {
-        type: "anchor",
         link: "https://pux-movies.netlify.app",
-        styles: "primary large",
-        text: "Launch Site",
+        styles: "btn--primary btn--large",
+        text: "Launch Website",
       },
       secondary: {
-        type: "anchor",
         link: "https://github.com/Dangereye/Movies",
-        style: "secondary dark large",
+        styles: "btn--secondary btn--large",
         text: "View Code",
       },
     },
@@ -88,15 +86,13 @@ const myProjects = [
     ],
     buttons: {
       primary: {
-        type: "anchor",
-        url: "https://pux-the-weather.netlify.app",
-        styles: "primary large",
-        text: "Launch Site",
+        link: "https://pux-the-weather.netlify.app",
+        styles: "btn--primary btn--large",
+        text: "Launch Website",
       },
       secondary: {
-        type: "anchor",
-        url: "https://github.com/Dangereye/the-weather",
-        styles: "secondary dark large",
+        link: "https://github.com/Dangereye/the-weather",
+        styles: "btn--secondary btn--large",
         text: "View Code",
       },
     },
@@ -135,15 +131,13 @@ const myProjects = [
     ],
     buttons: {
       primary: {
-        type: "anchor",
-        url: "https://pux-star-wars.netlify.app",
-        styles: "primary large",
-        text: "Launch Site",
+        link: "https://pux-star-wars.netlify.app",
+        styles: "btn--primary btn--large",
+        text: "Launch Website",
       },
       secondary: {
-        type: "anchor",
-        url: "https://github.com/Dangereye/starwars",
-        styles: "secondary dark large",
+        link: "https://github.com/Dangereye/starwars",
+        styles: "btn--secondary btn--large",
         text: "View Code",
       },
     },
@@ -186,10 +180,10 @@ const myProjects = [
       },
     ],
     buttons: {
-      secondary: {
+      primary: {
         type: "anchor",
-        url: "https://github.com/Dangereye/Portfolio",
-        styles: "secondary dark large",
+        link: "https://github.com/Dangereye/portfolio-njs",
+        styles: "btn--primary btn--large",
         text: "View Code",
       },
     },
