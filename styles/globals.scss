@@ -30,6 +30,10 @@ a {
 }
 
 //Global
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: clamp(1.6rem, 2.5vw, 1.8rem);
   color: $text-dark;

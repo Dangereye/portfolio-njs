@@ -1,7 +1,13 @@
+import { useRouter } from "next/router";
 import Button from "../shared/Button";
 
 function Header() {
-  const ScrollToSection = () => {};
+  const router = useRouter();
+
+  const handleButton = () => {
+    router.push("/#portfolio");
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -14,7 +20,7 @@ function Header() {
         <Button
           name="Recent Projects"
           style="btn--secondary btn--large"
-          func={ScrollToSection}
+          func={handleButton}
         />
       </div>
     </header>
