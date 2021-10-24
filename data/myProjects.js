@@ -167,12 +167,8 @@ const myProjects = [
         link: "https://react-icons.github.io/react-icons/",
       },
       {
-        text: "React Router",
-        link: "https://reactrouter.com/web/guides/quick-start",
-      },
-      {
-        text: "Node Sass",
-        link: "https://www.npmjs.com/package/node-sass",
+        text: "Sass",
+        link: "https://www.npmjs.com/package/sass",
       },
       {
         text: "GSAP",
