@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Button from "../shared/Button";
 
-function Slideshow({ slideshowIsOpen, setSlideshowIsOpen, firstSlide = 0 }) {
+function Slideshow({ setSlideshowIsOpen, firstSlide = 0 }) {
   const [activeSlide, setActiveSlide] = useState(firstSlide);
   const [position, setPosition] = useState(0 - activeSlide * 100);
   const wrapperWidth = slideshowData.length * 100;
