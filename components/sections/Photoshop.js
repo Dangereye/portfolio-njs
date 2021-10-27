@@ -1,7 +1,13 @@
 import Image from "next/image";
-import Slides from "/data/photoshopSlides";
+import Slideshow from "./SlideShow";
+import slideshowData from "/data/slideshowData";
 
-function Photoshop() {
+function Photoshop({ setSlideshowIsOpen, setFirstSlide }) {
+  const openSlideshow = (index) => {
+    setFirstSlide(index);
+    setSlideshowIsOpen(true);
+  };
+
   return (
     <section className="section" id="photoshop">
       <div className="container">
@@ -17,8 +23,12 @@ function Photoshop() {
             placeholder="blur"
           />
           <div className="section__block grid grid--multiple">
-            {Slides.map((slide, index) => (
-              <div className="project" key={`slide-${index}`}>
+            {slideshowData.map((slide, index) => (
+              <div
+                className="project"
+                key={`slide-${index}`}
+                onClick={() => openSlideshow(index)}
+              >
                 <div className="project__image">
                   <Image
                     src={slide.image}

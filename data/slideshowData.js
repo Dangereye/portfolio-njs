@@ -1,4 +1,4 @@
-const slides = [
+const slideshowData = [
   {
     title: "AXQ Face Cover",
     image: "/img/sections/photoshop/axq_face-cover.jpg",
@@ -46,4 +46,4 @@ const slides = [
   },
 ];
 
-export default slides;
+export default slideshowData;
