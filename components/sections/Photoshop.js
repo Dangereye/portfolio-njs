@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Slideshow from "./SlideShow";
 import slideshowData from "/data/slideshowData";
 
 function Photoshop({ setSlideshowIsOpen, setFirstSlide }) {
