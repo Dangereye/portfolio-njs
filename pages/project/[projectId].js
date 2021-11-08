@@ -2,13 +2,9 @@ import myProjects from "../../data/myProjects";
 import Image from "next/image";
 import { BiTimeFive } from "react-icons/bi";
 import ListOfAnchors from "../../components/shared/lists/ListOfAnchors";
-import Button from "../../components/shared/Button";
 import Anchor from "../../components/shared/Anchor";
 
 function ProjectDetails({ project }) {
-  const HandleClick = () => {
-    console.log("Clicked");
-  };
   return (
     <div className="page-content">
       <section className="section">
