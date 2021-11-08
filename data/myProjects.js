@@ -174,6 +174,10 @@ const myProjects = [
         text: "GSAP",
         link: "https://greensock.com/gsap",
       },
+      {
+        text: "Email JS",
+        link: "https://www.emailjs.com/",
+      },
     ],
     buttons: {
       primary: {
