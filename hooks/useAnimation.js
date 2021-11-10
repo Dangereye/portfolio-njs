@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function useAnimation() {
-  const animate = (section, one, two) => {
+  const animate = (section, fade, scale) => {
     const stagger = 0.15;
     const delay = 0.1;
     const duration = 0.7;
@@ -14,12 +14,12 @@ function useAnimation() {
         trigger: section,
         start: "top 500",
         toggleActions: "play none none none",
-        markers: true,
+        markers: false,
       },
     });
 
-    if (one) {
-      const fadeUp = gsap.from(one, {
+    if (fade) {
+      const fadeUp = gsap.from(fade, {
         y: 100,
         opacity: 0,
         delay,
@@ -27,7 +27,7 @@ function useAnimation() {
         stagger,
         ease,
         onComplete: () => {
-          if (!two) {
+          if (!scale) {
             tl.kill();
           }
         },
@@ -35,8 +35,8 @@ function useAnimation() {
       tl.add(fadeUp);
     }
 
-    if (two) {
-      const scaleUp = gsap.from(two, {
+    if (scale) {
+      const scaleUp = gsap.from(scale, {
         scale: 0,
         duration,
         stagger,
