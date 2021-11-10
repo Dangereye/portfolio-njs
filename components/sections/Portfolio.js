@@ -1,17 +1,29 @@
+import { useState, useEffect } from "react";
+import useAnimation from "../../hooks/useAnimation";
 import myProjects from "../../data/myProjects";
 import Image from "next/image";
 import Link from "next/link";
 
 function Portfolio() {
+  const animate = useAnimation();
+  const [animIsLoaded, setAnimIsLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!animIsLoaded) {
+      animate("#portfolio", ".test");
+      setAnimIsLoaded(true);
+    }
+  }, [animate, animIsLoaded]);
+
   return (
     <section className="section" id="portfolio">
       <div className="container">
-        <div className="section__subtitle center">Portfolio</div>
-        <h2 className="section__title center">Recent Projects</h2>
+        <div className="section__subtitle center test">Portfolio</div>
+        <h2 className="section__title center test">Recent Projects</h2>
         <div className="section__block grid grid--multiple">
           {myProjects.map((project) => (
             <Link href={`/project/${project.id}`} key={`project-${project.id}`}>
-              <a>
+              <a className="test">
                 <div className="project">
                   <div className="project__image">
                     <Image
