@@ -10,7 +10,7 @@ function Portfolio() {
 
   useEffect(() => {
     if (!animIsLoaded) {
-      animate("#portfolio", ".fadeup");
+      animate("#portfolio", ".portfolio-fadeup");
       setAnimIsLoaded(true);
     }
   }, [animate, animIsLoaded]);
@@ -18,12 +18,16 @@ function Portfolio() {
   return (
     <section className="section" id="portfolio">
       <div className="container">
-        <div className="section__subtitle center fadeup">Portfolio</div>
-        <h2 className="section__title center fadeup">Recent Projects</h2>
+        <div className="section__subtitle center portfolio-fadeup">
+          Portfolio
+        </div>
+        <h2 className="section__title center portfolio-fadeup">
+          Recent Projects
+        </h2>
         <div className="section__block grid grid--multiple">
           {myProjects.map((project) => (
             <Link href={`/project/${project.id}`} key={`project-${project.id}`}>
-              <a className="fadeup">
+              <a className="portfolio-fadeup">
                 <div className="project">
                   <div className="project__image">
                     <Image
