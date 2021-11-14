@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Pux from "../shared/Pux";
 import Button from "../shared/Button";
 
 function Header() {
@@ -10,6 +11,7 @@ function Header() {
 
   return (
     <header className="header">
+      <Pux />
       <div className="container">
         <div className="section__subtitle">Front-end Developer.</div>
         <h1>Craig Puxty</h1>

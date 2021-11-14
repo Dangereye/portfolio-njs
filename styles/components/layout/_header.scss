@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: calc(100vh - 20rem);
   padding: $section-vertical-padding $page-horizontal-padding;
   text-align: center;
@@ -12,11 +13,48 @@
     margin-top: $section-vertical-padding;
   }
 
+  svg.pux {
+    width: 60vw;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    path {
+      stroke: $accent-color;
+      stroke-dasharray: 1500;
+      stroke-dashoffset: 1500;
+      animation: draw 3s linear 0.5s forwards;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
   @media (max-width: $mobile) {
     height: calc(100vh - 10rem);
   }
 
   @media (max-height: 420px) {
     height: 100vh;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1500;
+    opacity: 1;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
   }
 }
