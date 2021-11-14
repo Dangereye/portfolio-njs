@@ -1,13 +1,15 @@
 import { useRouter } from "next/router";
 import emailjs from "emailjs-com";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FormInput from "../forms/FormInput";
 import TextArea from "../forms/TextArea";
 import Button from "../shared/Button";
 import Feedback from "../shared/Feedback";
+import useAnimation from "../../hooks/useAnimation";
 
 function Contact() {
   const router = useRouter();
+  const animate = useAnimation();
 
   const data = {
     company: "",
@@ -25,6 +27,14 @@ function Contact() {
 
   const [formData, setFormData] = useState(data);
   const [feedback, setFeedback] = useState(status);
+  const [animIsLoaded, setAnimIsLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!animIsLoaded) {
+      animate("#contact", ".contact-fadeup");
+      setAnimIsLoaded(true);
+    }
+  }, [animate, animIsLoaded]);
 
   const handleUpdate = (e) => {
     const { name, value } = e.target;
@@ -71,10 +81,12 @@ function Contact() {
   return (
     <section className="section" id="contact">
       <div className="container">
-        <div className="section__subtitle center">Let&apos;s talk</div>
-        <h2 className="section__title center">Contact Me</h2>
+        <div className="section__subtitle center contact-fadeup">
+          Let&apos;s talk
+        </div>
+        <h2 className="section__title center contact-fadeup">Contact Me</h2>
         <div className="section__block">
-          <form className="form" onSubmit={handleSubmit}>
+          <form className="form " onSubmit={handleSubmit}>
             <Feedback status={feedback} />
 
             <FormInput
@@ -82,12 +94,14 @@ function Contact() {
               value={formData.company}
               onChange={handleUpdate}
               placeholder="Company name"
+              style="contact-fadeup"
             />
             <FormInput
               name="name"
               value={formData.name}
               onChange={handleUpdate}
               placeholder="Your name"
+              style="contact-fadeup"
               required
             />
             <FormInput
@@ -96,6 +110,7 @@ function Contact() {
               value={formData.email}
               onChange={handleUpdate}
               placeholder="name@provider.com"
+              style="contact-fadeup"
               required
             />
             <FormInput
@@ -103,6 +118,7 @@ function Contact() {
               value={formData.subject}
               onChange={handleUpdate}
               placeholder="Subject title"
+              style="contact-fadeup"
               required
             />
             <TextArea
@@ -110,9 +126,14 @@ function Contact() {
               value={formData.message}
               onChange={handleUpdate}
               placeholder="Your message"
+              style="contact-fadeup"
               required
             />
-            <Button type="submit" name="submit" />
+            <Button
+              type="submit"
+              name="submit"
+              style="btn--primary btn--large contact-fadeup"
+            />
           </form>
         </div>
       </div>

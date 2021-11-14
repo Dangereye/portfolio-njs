@@ -1,6 +1,14 @@
-function FormInput({ type, name, value, onChange, placeholder, required }) {
+function FormInput({
+  type,
+  style,
+  name,
+  value,
+  onChange,
+  placeholder,
+  required,
+}) {
   return (
-    <div className="form__group">
+    <div className={`form__group ${style}`}>
       <label htmlFor={name}>{name}</label>
       <input
         type={type}

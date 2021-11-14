@@ -1,6 +1,6 @@
-function TextArea({ name, value, onChange, placeholder, required }) {
+function TextArea({ name, style, value, onChange, placeholder, required }) {
   return (
-    <div className="form__group">
+    <div className={`form__group ${style}`}>
       <label htmlFor={name}>{name}</label>
       <textarea
         name={name}
