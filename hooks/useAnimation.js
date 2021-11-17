@@ -3,9 +3,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function useAnimation() {
-  const animate = (section, fade, scale) => {
+  const animate = (section, fade, scale, wait) => {
     const stagger = 0.15;
-    const delay = 0.1;
+    const delay = wait ? wait : 0.1;
     const duration = 0.7;
     const ease = "back.out(3)";
 

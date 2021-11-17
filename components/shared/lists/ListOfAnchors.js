@@ -1,6 +1,6 @@
-function ListOfAnchors({ component, title, list }) {
+function ListOfAnchors({ component, style, title, list }) {
   return (
-    <div className="list">
+    <div className={`list ${style}`}>
       <h3 className="list__title">{title}</h3>
       <ul className="list__items">
         {list.map((item) => (
@@ -22,6 +22,7 @@ function ListOfAnchors({ component, title, list }) {
 
 ListOfAnchors.defaultProps = {
   component: "Component",
+  style: "",
   title: "Title",
   list: [
     { text: "A", link: "/" },
