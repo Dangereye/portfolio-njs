@@ -22,6 +22,7 @@ function About() {
                 src="/img/sections/about/profile-image.jpg"
                 width="600"
                 height="600"
+                alt="Craig Puxty"
               />
             </div>
           </div>
