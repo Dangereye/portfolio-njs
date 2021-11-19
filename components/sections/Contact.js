@@ -21,6 +21,7 @@ function Contact() {
 
   const status = {
     message: "",
+    loading: false,
     success: false,
     error: false,
   };
@@ -52,6 +53,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFeedback({ ...feedback, loading: true });
     emailjs
       .sendForm(
         "gmail",
@@ -62,7 +64,12 @@ function Contact() {
       .then(
         (result) => {
           router.push("/#contact");
-          setFeedback({ ...feedback, message: "Message sent.", success: true });
+          setFeedback({
+            ...feedback,
+            message: "Message sent.",
+            success: true,
+            loading: false,
+          });
           setFormData(data);
           resetFeedback();
         },
@@ -131,8 +138,9 @@ function Contact() {
             />
             <Button
               type="submit"
-              name="submit"
-              style="btn--primary btn--large contact-fadeup"
+              name={feedback.loading ? "sending" : "submit"}
+              style="btn--primary btn--large contact-fadeup btn--icon"
+              icon={feedback.loading && <span className="spinner"></span>}
             />
           </form>
         </div>

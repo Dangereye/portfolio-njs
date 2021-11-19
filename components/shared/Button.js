@@ -1,7 +1,8 @@
-function Button({ type, style, name, func }) {
+function Button({ type, style, name, func, icon }) {
   return (
     <button type={type} className={`btn ${style}`} onClick={func}>
       {name}
+      {icon && icon}
     </button>
   );
 }

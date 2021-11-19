@@ -12,7 +12,7 @@ function ProjectDetails({ project }) {
 
   useEffect(() => {
     if (!animIsLoaded) {
-      animate("#project", ".project-fadeup", ".project-scaleup", 0.5, 0);
+      animate("#project", ".project-fadeup", ".project-scaleup", 0.5);
       setAnimIsLoaded(true);
     }
   }, [animate, animIsLoaded]);
