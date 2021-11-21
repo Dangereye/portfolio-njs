@@ -6,7 +6,7 @@ const myProjects = [
     date: "Jan 2021",
     title: "Movies",
     description:
-      "Search and explore millions of movies, television shows and related people. Check out upcoming releases, rediscover old favourites, learn who or what is popular - right now, watch trailers or read biographies. Maybe, you'll even find a few gems that you never knew existed. Disclaimer; can cause unexplained time loss.",
+      "Search and explore millions of movies, television shows and associated people. Check out upcoming releases, and rediscover old favourites. You can watch trailers, read biographies and learn who or what is popular - right now!  You'll even find a few gems along the way - that you never knew existed! Caution; can cause unexplained time loss.",
     preview_image: "/img/projects/tmdb-movies/preview.jpg",
     api: [
       {
@@ -55,7 +55,7 @@ const myProjects = [
     date: "Mar 2021",
     title: "The Weather",
     description:
-      "Check the forecast where you are or anywhere else in the world. Don't know where you are? Fear not, the geolocation has you covered. It's looking brighter already, eh? View conditions, precipitation and wind by the hour in a format that suits you. I've even thrown in some pretty pictures - courtesy of Unsplash that match (somewhat reliably) current weather conditions. You're welcome!",
+      "Check the forecast where you are, or anywhere else in the world for that matter. Don't know where you are? Fear not - enabling geolocation has you covered. It's looking brighter already, eh? View conditions, precipitation and wind by the hour - in a format that suits you. I've even thrown in some pretty pictures - courtesy of Unsplash that match (somewhat reliably) current weather conditions. You're welcome!",
     preview_image: "/img/projects/the-weather/preview.jpg",
     api: [
       {
@@ -103,7 +103,7 @@ const myProjects = [
     date: "Feb 2021",
     title: "Star Wars",
     description:
-      "A long time ago in a galaxy far, far away, some stuff (no spoilers) went down! A team of dedicated enthusiasts over at swapi.dev have scoured the internet to collect and compile data from this remarkable tale. Rest easy - no Bothans died to bring us this information! I've presented the data with several royalty-free stock images (credited) and icons to make it a little more readable and digestible. Explore movies, people, species, vehicles, planets, starships and their relative associations.",
+      "A long time ago in a galaxy far, far away... Stuff (no spoilers) went down! A team of dedicated enthusiasts over at swapi.dev have scoured the internet to collect and compile data from this remarkable tale. Rest easy - no Bothans died to bring us this information! I've presented the data with several royalty-free stock images (credited) and icons to make it a little more readable and digestible. Explore movies, people, species, vehicles, planets, starships and their relative associations.",
     preview_image: "/img/projects/star-wars/preview.jpg",
     api: [
       {
@@ -148,7 +148,7 @@ const myProjects = [
     date: "Sep 2021",
     title: "Portfolio",
     description:
-      "Anyone can make bold claims but, do those claims hold up in reality? Let's See! Please, review my work. Navigation is easy! Skip to sections of interest at the click of your button. View projects - live, or time permitting - browse my code on Github. There are several Photoshop examples to inspect. I've even created you a carousel to make it quicker! You can also learn a little more about me. If you like what you see and would like to know more, let's talk!",
+      "Bringing it all together - acquired skills, knowledge and experience, including several (freelanced) Photoshop examples. Browse a selection of my recent projects, either live or time permitting - as code on Github.  If you like what you see and would like to collaborate on future projects? Please, drop me a message using the form provided in the contact section - I would love to hear from you!",
     preview_image: "/img/projects/portfolio/preview.jpg",
     tech: [
       { image: `${svg}/html5.svg`, text: "HTML5" },

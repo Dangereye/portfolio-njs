@@ -16,9 +16,10 @@ const mySkills = [
       { svg: `${svg}/css3.svg`, title: "CSS3", note: null },
       { svg: `${svg}/sass.svg`, title: "SCSS", note: null },
       { svg: `${svg}/js.svg`, title: "Javascript", note: null },
+      { svg: `${svg}/gsap.svg`, title: "GSAP", note: "basics" },
       { svg: `${svg}/react.svg`, title: "React", note: null },
       { svg: `${svg}/redux.svg`, title: "Redux", note: "basics" },
-      { svg: `${svg}/next.svg`, title: "Next", note: "learning" },
+      { svg: `${svg}/next.svg`, title: "Next", note: "basics" },
     ],
   },
   {
@@ -28,7 +29,7 @@ const mySkills = [
       { svg: `${svg}/expressjs.svg`, title: "Express", note: "basics" },
       { svg: `${svg}/mongoose.svg`, title: "Mongoose", note: "basics" },
       { svg: `${svg}/mongodb.svg`, title: "MongoDB", note: "basics" },
-      { svg: `${svg}/next.svg`, title: "Next", note: "learning" },
+      { svg: `${svg}/next.svg`, title: "Next", note: "basics" },
     ],
   },
   {
