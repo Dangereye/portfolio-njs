@@ -36,18 +36,18 @@ function Footer() {
                 component="footer"
                 title="Projects"
                 list={[
-                  { text: "Movies", link: "http://localhost:3000/project/1" },
+                  { text: "Movies", link: "/project/1" },
                   {
                     text: "The Weather",
-                    link: "http://localhost:3000/project/2",
+                    link: "/project/2",
                   },
                   {
                     text: "Star Wars",
-                    link: "http://localhost:3000/project/3",
+                    link: "/project/3",
                   },
                   {
                     text: "Portfolio",
-                    link: "http://localhost:3000/project/4",
+                    link: "/project/4",
                   },
                 ]}
               />
@@ -64,7 +64,13 @@ function Footer() {
               <ListOfLinks
                 component="footer"
                 title="Contact"
-                list={[{ text: "Send Email", link: "/#contact" }]}
+                list={[
+                  { text: "Send Email", link: "/#contact" },
+                  {
+                    text: "Privacy policy",
+                    link: "/privacy",
+                  },
+                ]}
               />
             </div>
             <div className="footer__back-to-top">
@@ -75,7 +81,9 @@ function Footer() {
       </footer>
       <div className="copyright">
         <div className="container">
-          <div className="copyright__text">&copy; Craig Puxty, 2021.</div>
+          <div className="copyright__text">
+            &copy; Craig Puxty, 2021. All rights reserved.
+          </div>
         </div>
       </div>
     </>
