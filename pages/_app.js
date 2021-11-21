@@ -11,7 +11,15 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Craig Puxty | Portfolio</title>
-        <meta name="description" content="The portfolio of Craig Puxty" />
+        <meta
+          name="description"
+          content="Craig Puxty's online portfolio using React js, Next js and GSAP."
+        />
+        <meta
+          name="keywords"
+          content="HTML, CSS, SCSS, Javascript, React js, Next js, GSAP, Photoshop artist, Web design, Web development, Portfolio"
+        />
+        <meta name="author" contents="Craig Puxty" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
